@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Examples</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+    <div class="container">
+        <table>
+            <h3>User Details</h3>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Fee</th>
+    
+                </tr>
+            </thead>
+            <tbody>
+                {% for crud_example in crud_examples %}
+                <tr>
+                    <td>{{ crud_example.id }}</td>
+                    <td>{{ crud_example.name }}</td>
+                    <td>{{ crud_example.address }}</td>
+                    <td>{{ crud_example.fee }}</td>
+     
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>

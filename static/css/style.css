@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    padding: 20px;
+    width: 60%;
+    background-color: #302f30;
+    margin-top: 100px;
+}
+
+.container h3 {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    padding: 10px;
+    background-color: aqua;
+}
+table {
+    width: 730px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+/* Style table header */
+th {
+    background-color: #231f1f;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 8px;
+    text-align: left;
+    width: 100px;
+}
+
+/* Style table cells */
+td {
+    padding: 8px;
+    border: 1px solid rgb(255, 255, 255);
+    width: 100px;
+    color: white;
+}
+
+/* Add hover effect to table rows */
+tr:hover {
+    background-color: #2b2b2b;
+}
